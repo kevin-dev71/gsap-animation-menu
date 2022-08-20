@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Hamburger } from '@/components/Hamburger';
 
 const Header = () => {
   return (
@@ -17,6 +18,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Hamburger />
     </header>
   );
 };
