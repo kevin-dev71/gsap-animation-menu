@@ -120,6 +120,9 @@ header {
         width: 100%;
         height: 100%;
         opacity: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: cameraPan 30s infinite;
       }
       .wrapper {
         position: relative;
@@ -204,5 +207,23 @@ header {
       }
 
     }
+  }
+}
+
+@keyframes cameraPan {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0% 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
